@@ -20,7 +20,7 @@ if [ -z $1 ]; then
 fi
 
 
-echo "Input streamiks on: " $INPUT
+echo "Using the following as input stream: " $INPUT
 
 
 ffmpeg -f lavfi \
