@@ -1,6 +1,11 @@
 # rtsp-stream-to-youtube
 A script that allows to stream RTSP source to Youtube live using FFMPEG.
 
+Usage:
+```
+./stream-to-youtube.sh <stream key/name>
+```
+
 Cheatsheet for used ffmpeg parameters. Needs reformatting and additional information
 ```
  -f lavfi
