@@ -23,15 +23,13 @@ fi
 echo "Using the following as input stream: " $INPUT
 
 
-ffmpeg -f lavfi \
+ffmpeg  -f lavfi \
 	-i anullsrc \
--rtsp_transport udp \
--i $INPUT \
--tune zerolatency \
--vcodec mpeg4 \
--pix_fmt + \
--c:v copy \
--c:a aac \
--f flv rtmp://a.rtmp.youtube.com/live2/$1
-
-
+	-rtsp_transport udp \
+	-i $INPUT \
+	-tune zerolatency \
+	-vcodec mpeg4 \
+	-pix_fmt + \
+	-c:v copy \
+	-c:a aac \
+	-f flv rtmp://a.rtmp.youtube.com/live2/$1
